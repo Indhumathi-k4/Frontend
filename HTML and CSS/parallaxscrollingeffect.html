@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Effect</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .parallax {
+            background-image: url('C:\Users\prave\Dropbox\PC\Downloads\Aeroplane.jpg'); 
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .content {
+            padding: 50px;
+            background-color: white;
+            font-size: 18px;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .parallax-second {
+            background-image: url('C:\Users\prave\Dropbox\PC\Downloads\Aeroplane.jpg'); 
+        }
+
+        @media (max-width: 768px) {
+            .parallax {
+                background-attachment: scroll; 
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="parallax">
+        Welcome to Parallax Scrolling!
+    </section>
+
+    <section class="content">
+        <h2>About Parallax</h2>
+        <p>Parallax scrolling is a technique where background content moves at a different speed than foreground content.</p>
+    </section>
+
+    <section class="parallax parallax-second">
+        Another Layer of Parallax
+    </section>
+
+    <section class="content">
+        <h2>Enjoy the Effect</h2>
+        <p>As you scroll, notice how the images stay in place while the content moves.</p>
+    </section>
+
+</body>
+</html>
